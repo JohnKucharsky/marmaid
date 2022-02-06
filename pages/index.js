@@ -20,6 +20,12 @@ export default function Recipes({ recipes }) {
 			{recipes.map((recipe) => (
 				<RecipeCard key={recipe.sys.id} recipe={recipe} />
 			))}
+			<style jsx>{`
+				.recipe-list {
+					display: flex;
+					flex-wrap: wrap;
+				}
+			`}</style>
 		</div>
 	)
 }
